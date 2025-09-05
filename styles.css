@@ -1,0 +1,132 @@
+body {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  color: #2c2c2c;
+  line-height: 1.7;
+}
+
+/* Main container */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+/* Page sections */
+.page {
+  display: none;
+  background: #fff;
+  padding: 50px;
+  margin-bottom: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: all 0.4s ease-in-out;
+}
+
+.page.active {
+  display: block;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Headings */
+h1, h2, h3 {
+  text-align: center;
+  color: #1a1a1a;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: #4b0082; /* deep indigo for elegance */
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #663399; /* softer purple */
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: #444;
+}
+
+/* Text */
+p {
+  margin: 18px 0;
+  text-align: justify;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+/* Images */
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.image-row img {
+  width: 220px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 2px solid #ddd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-row img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.center-img {
+  display: block;
+  margin: 25px auto;
+  border-radius: 14px;
+  border: 2px solid #ddd;
+  max-width: 80%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.center-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+/* Navigation */
+.nav {
+  text-align: center;
+  margin: 25px 0;
+}
+
+/* Buttons */
+button {
+  padding: 12px 24px;
+  margin: 8px;
+  border: none;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
